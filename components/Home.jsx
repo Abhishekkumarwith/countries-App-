@@ -9,7 +9,8 @@ import { ThemeContext } from '../contexts/ThemeContext';
 
 export default function Home() {
   const [query, setCountry] = useState("");
-console.log('__Developed_By_Abhishek');
+  
+
  const [isdark]= useContext(ThemeContext)
 
 

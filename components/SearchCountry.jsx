@@ -11,7 +11,7 @@ export default function SearchCountry({setCountry}) {
         name="text"
         placeholder="Search for a country"
         id="search"
-        onInput={(e)=>setCountry(e.target.value)}
+        onInput={(e)=>setCountry(e.target.value.toLowerCase())}
       />
     </div>
   );
