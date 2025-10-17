@@ -1,0 +1,123 @@
+.skeleton {
+  background: linear-gradient(90deg, #e3e3e3 25%, #f6f6f6 50%, #e3e3e3 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+
+main.dark .skeleton {
+  background: hsl(209, 23%, 22%);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.simmer {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 45px;
+}
+
+.flag {
+  width: 400px;
+  height: 250px;
+  border-radius: 4px;
+}
+
+.title {
+  width: 180px;
+  height: 28px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.line {
+  height: 18px;
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+
+.line.short {
+  width: 100%;
+}
+.line.medium {
+  width: 100%;
+}
+.line.full {
+  width: 100%;
+}
+
+.border-boxes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.border-box {
+  width: 70px;
+  height: 26px;
+  border-radius: 3px;
+}
+
+.btn {
+  width: 80px;
+  height: 28px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* layout spacing */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark-toggle {
+  width: 90px;
+  height: 28px;
+  border-radius: 6px;
+}
+
+.skeleton-card {
+  height: 322px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #e3e3e3 25%, #f6f6f6 50%, #e3e3e3 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+main.dark .skeleton-card {
+  background: hsl(209, 23%, 22%);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200%0;
+  }
+  100% {
+    background-position: 200%0;
+  }
+}
+
+@media (max-width: 780px) {
+  .simmer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 450px) {
+  .flag {
+    width: 100%;
+    max-width: 400px;
+  }
+}
